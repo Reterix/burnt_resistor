@@ -3,10 +3,10 @@ interface iPortfolio {
   name: string;
   desc: string;
   date: string;
-  cathegory: string;
+  cathegory?: string;
 }
 
-const PortfolioItem = ({ name, desc, date, photo, cathegory }: iPortfolio) => {
+const PortfolioItem = ({ name, desc, date, photo }: iPortfolio) => {
   return (
     <div className="flex flex-col gap-1 p-4">
       <div className="group relative block bg-black w-full h-64 rounded-lg mt-4">
